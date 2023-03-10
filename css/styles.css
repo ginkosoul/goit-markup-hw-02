@@ -1,7 +1,15 @@
 :root{
-    --header-text-color: #2E2F42;
-    --main-text-color:#434455;
+    --accent-color:#4D5AE5;
+    --main-text-color: #434455;
+    --dark-theme-text-color: #FFFFFF;
+    --dark-theme-color: #2E2F42;
+    --active-order-btn-color:#404BBF;
+    --footer-text-color:#E7E9FC;
+    --light-grey:#F4F4FD;
 }
+
+/* ==============normalize============== */
+
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--main-text-color);
@@ -13,60 +21,95 @@ body{
     text-decoration: none;
 }
 
+/* ==============components============== */
+
+.order-servise-btn{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    color: var(--dark-theme-text-color);
+
+    background: var(--accent-color);
+
+}
+
+.order-servise-btn:focus,
+.order-servise-btn:hover{
+    background: var(--active-order-btn-color);
+}
+
+.filter-btn{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    background: var(--light-grey);
+
+    color: var(--accent-color);
+    cursor: pointer;
+}
+.filter-btn:hover,
+.filter-btn:focus{
+    background: var(--active-order-btn-color);
+    color: var(--dark-theme-text-color);
+}
+/* ==============header============== */
+
 .logotype{
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--header-text-color);
+
+    color: var(--dark-theme-color);
 }
 .logo-web{
-    color: #4D5AE5;
+    color: var(--accent-color);
 }
 .menu-link{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
     color: var(--main-text-color);
 }
 .contact-info{
     font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
     color: var(--main-text-color);
 }
+.contact-info:hover,
+.contact-info:focus,
+.menu-link:focus,
+.menu-link:hover{
+    color: var(--accent-color);
+}
+
+/* ==============hero-section============== */
+
 .hero-section{
-    background: #2E2F42;
+    background: var(--dark-theme-color);
 }
 
 .main-header-text{
-    font-style: normal;
-    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+
+    color: var(--dark-theme-text-color);
 }
-.order-servise-btn{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
 
-    color: #FFFFFF;
+/* ==============features-section============== */
 
-    background: #4D5AE5;
-
-}
 .feature-list-name{
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -75,82 +118,74 @@ body{
 
 }
 .feature-list-desc{
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
     color: var(--main-text-color);
 }
+
+/* ==============product-section============== */
+
 .our-product-header{
-    font-style: normal;
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
+
     color: var(--header-text-color);
 }
+
+/* ==============team-section============== */
+
 .our-team-head{
-    font-style: normal;
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
+
     color: var(--header-text-color);
 }
 .teammate-name{
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+
     color: var(--header-text-color);
 }
 .teammate-trade{
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
     color: var(--main-text-color);
 }
+/* ==============footer-section============== */
 .footer-section{
-    background: #2E2F42;
+    background: var(--dark-theme-color);
 }
 .footer-text{
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #E7E9FC;
+
+    color: var(--footer-text-color);
 }
-.filter-btn{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    background: #F4F4FD;
-    color: #4D5AE5;
-    cursor: pointer;
+.footer-section .logotype{
+    color: var(--light-grey);
 }
-.filter-btn:hover,
-.filter-btn:focus{
-    background: #404BBF;
-    color: #434455;
-}
-.portfolio-head{
+/* ==============portfolio============== */
+.portfolio-block-name{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+
     color: var(--header-text-color);
 }
 .portfolio-group{
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
+    color:var(--main-text-color);
 }
