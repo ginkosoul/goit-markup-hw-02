@@ -72,6 +72,7 @@ body{
 }
 .menu-link{
     font-weight: 500;
+
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -80,6 +81,7 @@ body{
 }
 .contact-info{
     font-style: normal;
+
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -100,6 +102,7 @@ body{
 }
 
 .main-header-text{
+
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
@@ -111,10 +114,12 @@ body{
 
 .feature-list-name{
     font-weight: 500;
+
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--header-text-color);
+
+    color: var(--dark-theme-color);
 
 }
 .feature-list-desc{
@@ -132,7 +137,7 @@ body{
     line-height: 1.11;
     letter-spacing: 0.02em;
 
-    color: var(--header-text-color);
+    color: var(--dark-theme-color);
 }
 
 /* ==============team-section============== */
@@ -142,15 +147,16 @@ body{
     line-height: 1.11;
     letter-spacing: 0.02em;
 
-    color: var(--header-text-color);
+    color: var(--dark-theme-color);
 }
 .teammate-name{
     font-weight: 500;
+
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
 
-    color: var(--header-text-color);
+    color: var(--dark-theme-color);
 }
 .teammate-trade{
     font-size: 16px;
@@ -176,11 +182,12 @@ body{
 /* ==============portfolio============== */
 .portfolio-block-name{
     font-weight: 500;
+
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
 
-    color: var(--header-text-color);
+    color: var(--dark-theme-color);
 }
 .portfolio-group{
     font-size: 16px;
